@@ -11,8 +11,6 @@ def parse():
 
     c = Counter(all_tags)
 
-    # print('all:', len(all_elms), 'span:', c['span'])
-
     for e in c:
         print(f'{e}: {c[e]}')
 parse()
