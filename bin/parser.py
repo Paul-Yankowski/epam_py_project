@@ -1,6 +1,8 @@
-from lxml import html
 import requests
 from collections import Counter
+
+from lxml import html
+
 URL = 'https://www.onliner.by/'
 def parse():
     page = requests.get(URL)
