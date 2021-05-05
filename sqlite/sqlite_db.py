@@ -1,5 +1,7 @@
 import sqlite3
 connection = sqlite3.connect("epam_project.db")
+#(":memory:")
+#("epam_project.db")
 sql = connection.cursor()
 
 sql.execute("""CREATE TABLE IF NOT EXISTS tags_data (

@@ -1,6 +1,5 @@
-import requests
 from collections import Counter
-
+import requests
 from lxml import html
 
 def parse(URL):
@@ -17,7 +16,6 @@ def parse(URL):
     return tags
         #print(f'{e}: {c[e]}')
 
-print(str(parse('https://www.onliner.by/')).replace('\'','\"',100000))
 
 
 

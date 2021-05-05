@@ -34,4 +34,3 @@ def wind():
     btn1.place(x=150, y=500)
     window.mainloop()
 
-wind()
