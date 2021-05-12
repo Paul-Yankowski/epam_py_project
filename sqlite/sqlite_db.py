@@ -1,6 +1,4 @@
 import sqlite3
-from bin.parser import Parser
-
 
 class Database:
     def __init__(self):
@@ -11,8 +9,6 @@ class Database:
                             check_date text,
                             tags_info text)
                             """)
-        # (":memory:")
-        # ("epam_project.db")
 
 
     def read_db(self):

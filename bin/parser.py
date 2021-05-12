@@ -5,9 +5,13 @@ from Logger.Logger import Logger
 class Parser:
 
     def __init__(self,URL):
-        self.URL=URL
-        self.site_name = 'parsed URL'
-        self.log = Logger(self.URL)
+        if type(URL) != str:
+            print('Unexpected URL')
+            raise TypeError
+        else:
+            self.URL=URL
+            self.site_name = 'parsed URL'
+            self.log = Logger(self.URL)
 
     def tags(self):
         page = requests.get(self.URL)
