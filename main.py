@@ -1,8 +1,9 @@
 import argparse
 import sys
-from GUI import gui
-from console import console
+from GUI.gui import GUI
+from console.console import Console
 
+cons=Console()
 
 def createParser():
     parser = argparse.ArgumentParser()
@@ -14,8 +15,8 @@ if __name__ == '__main__':
     parser = createParser()
     namespace = parser.parse_args(sys.argv[1:])
     if namespace.insert !=None:
-        console.get(str(namespace.insert))
+        cons.get(str(namespace.insert))
     elif namespace.view !=None:
-        print(console.view())
+        print(cons.view())
     else :
-        gui.wind()
+        GUI().wind()
