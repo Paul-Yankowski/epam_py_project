@@ -1,0 +1,13 @@
+setup.py
+GUI/__init__.py
+GUI/gui.py
+bin/__init__.py
+bin/parser.py
+console/__init__.py
+console/console.py
+epam_py_project.egg-info/PKG-INFO
+epam_py_project.egg-info/SOURCES.txt
+epam_py_project.egg-info/dependency_links.txt
+epam_py_project.egg-info/top_level.txt
+sqlite/__init__.py
+sqlite/sqlite_db.py
