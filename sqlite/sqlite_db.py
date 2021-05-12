@@ -20,5 +20,5 @@ class Database:
     def write_db(self,obj):
         sql = self.connection.cursor()
         sql.execute('insert into tags_data(site_name,url,tags_info) '
-                    'values (\'' + obj.URL + '\',\'' + obj.URL + '\',\'' + str(obj.tags()).replace('\'', '\"', 100000) + '\');')
+                    'values (\'' + obj.site_name + '\',\'' + obj.URL + '\',\'' + str(obj.tags()).replace('\'', '\"', 100000) + '\');')
         self.connection.commit()

@@ -10,7 +10,7 @@ class Parser:
             raise TypeError
         else:
             self.URL=URL
-            self.site_name = 'parsed URL'
+            self.site_name = URL.split('//')[1].split('/')[0]
             self.log = Logger(self.URL)
 
     def tags(self):
